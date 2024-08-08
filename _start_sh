@@ -1,0 +1,2 @@
+#!/bin/bash
+curl -o bot.jar https://github.com/liy-admin/dujiaoka-tgBot/releases/download/1.1.0/bot618.jar && docker-compose up -d
