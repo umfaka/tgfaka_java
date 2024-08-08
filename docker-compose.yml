@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+  tgbot_java:
+    image:  tgbot_java
+    container_name: tgbot_java
+    restart: always
+    build: .
+    volumes:
+      - ./config.properties:/app/config.properties
+    environment:
+      TZ: Asia/Shanghai
+    ports:
+      - "8443:8443"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
